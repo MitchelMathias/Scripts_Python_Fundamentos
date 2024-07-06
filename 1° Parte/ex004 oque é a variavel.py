@@ -1,0 +1,7 @@
+n = input('Digite um valor: ')
+print('ele é somente espaços?', n.isspace())
+print('ele é somente números?', n.isnumeric())
+print('ele é somente letras?', n.isalpha())
+print('ele esta captalizado?', n.istitle())
+print('ele esta todo em maiuscula?', n.isupper())
+print('ele esta todo em minusculo?', n.islower())
