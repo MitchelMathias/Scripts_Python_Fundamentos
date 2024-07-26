@@ -1,4 +1,4 @@
-
+from uex_115.cores import *
 
 def fatorial(n, formato=False):
     nu = 1
@@ -46,3 +46,14 @@ def resumo(preço, aumento=0, redução=0):
     print(f'Aumentado em {aumento}%:\t\t\t\t{aumenta(preço, aumento, True)}')
     print(f'Reduzido em {redução}%:\t\t\t\t{diminui(preço, redução, True)}')
     print('=' * 45)
+
+
+def leiaint(txt):
+    while True:
+        try:
+            inteiro = input(txt)
+            inteiro = int(inteiro)
+            break
+        except Exception as erro:
+            letrasCustom('Erro: Tente novamente', 5)
+    return inteiro

@@ -30,7 +30,7 @@ def linha(tam=45, cor=0):
 
 
 def menu(lista, msg1='MENU PRINCIPAL', msg2='Sua opção:', msg3='ERRO!: Digite um Número Válido.',
-         msg4='Encerrando o Programa... Até Logo', cor1=0, cor2=7, cor3=8, cor4=6, cor5=5, cor6=0):
+         msg4='Encerrando o Programa... Até Logo', cor1=0, cor2=7, cor3=8, cor4=6, cor5=8, cor6=0):
 
     """lista= A lista que deseja atribuir (apenas uma lista)
     msg1= A 1° Mensagem (cabeçalho)
@@ -89,4 +89,6 @@ def menu(lista, msg1='MENU PRINCIPAL', msg2='Sua opção:', msg3='ERRO!: Digite 
         ModulosePacotes.Pacot.cores.titulo(msg4, cor6)
 
     else:
-        ModulosePacotes.Pacot.cores.titulo(lista[resp])
+        ModulosePacotes.Pacot.cores.titulo(lista[resp], cor5)
+
+    return resp

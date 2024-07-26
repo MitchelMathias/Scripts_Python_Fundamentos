@@ -1,7 +1,4 @@
-import unidecode
-
 nome = str(input('Qual seu nome?')).lower().strip()
-nome = unidecode.unidecode(nome)
 if nome == 'mitchel':
     print('bem vindo de volta meu criador!')
     print('vc é tão lindo e inteligente')
