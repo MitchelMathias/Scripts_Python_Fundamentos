@@ -1,6 +1,5 @@
 import time
 
-
 def contagem():
     print('=' * 40)
     print('Contagem de 1 até 10 de 1 em 1')
